@@ -39,7 +39,7 @@ let BookmarkController = class BookmarkController {
     }
 };
 __decorate([
-    (0, common_1.Get)(),
+    (0, common_1.Get)('getall'),
     __param(0, (0, decoretor_1.GetUser)('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
@@ -81,7 +81,7 @@ __decorate([
 ], BookmarkController.prototype, "deleteBookmarkById", null);
 BookmarkController = __decorate([
     (0, common_1.UseGuards)(gaurd_1.JwtGuard),
-    (0, common_1.Controller)('bookmarks'),
+    (0, common_1.Controller)('bookmark'),
     __metadata("design:paramtypes", [bookmark_service_1.BookmarkService])
 ], BookmarkController);
 exports.BookmarkController = BookmarkController;
